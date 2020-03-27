@@ -5,6 +5,10 @@ import base64
 from binascii import unhexlify
 
 hex_str = '49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d'
+print("hex:", hex_str)
+
+# hex_str binary representation:
+print("bin:", bin(int(hex_str, 16))[2:].zfill(8))
 
 
 def hex_str_to_base64(hex_str):
@@ -12,12 +16,12 @@ def hex_str_to_base64(hex_str):
     return base64.b64encode(byte_seq)
 
 
-print(hex_str_to_base64(hex_str))
+print("base64:", hex_str_to_base64(hex_str))
 
-# Python is printing in utf-8 by default as below:
+# Utf-8 (default):
 byte_rep = bytes.fromhex(hex_str)
-print(byte_rep)
+print("utf-8:", byte_rep)
 
-# Utf-16 representation
+# Utf-16 representation:
 bytelike = hex_str.encode('utf-16')
-print(bytelike)
+print("utf-16:", bytelike)
