@@ -16,7 +16,7 @@ def hex_str_to_base64(hex_str):
     return base64.b64encode(byte_seq)
 
 
-print("base64:", hex_str_to_base64(hex_str))
+print("base64:", hex_str_to_base64(hex_str)),
 
 # Utf-8 (default):
 byte_rep = bytes.fromhex(hex_str)
