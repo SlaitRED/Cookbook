@@ -1,16 +1,16 @@
-#TODO improve this calculator!!!
+"""To do: improve this calculator!!!"""
 
-num1 = float(input("Number 1: "))
-opr = input("Function: ")
-num2 = float(input("Number 2: "))
+num1 = float(input(" "))
+opr = input("operation: ")
+num2 = float(input(" "))
 
-if(opr == "*"):
-    print("Result: ", num1 * num2)
-elif(opr == "/"):
-    print("Result: ", num1 / num2)
+if (opr == "*"):
+    print(num1, "*", num2, "=", num1 * num2)
+elif (opr == "/"):
+    print(num1, "/", num2, "=", num1 / num2)
 elif (opr == "+"):
-    print("Result: ", num1 + num2)
-elif(opr == "-"):
-    print("Result: ", num1 - num2)
+    print(num1, "+", num2, "=", num1 + num2)
+elif (opr == "-"):
+    print(num1, "-", num2, "=", num1 - num2)
 else:
-    print("Bad function :(")
+    print("Err001")
